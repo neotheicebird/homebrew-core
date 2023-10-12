@@ -19,7 +19,7 @@ jobs:
   check-label:
     runs-on: ubuntu-latest
     if: >
-      github.repository_owner == 'Homebrew' &&
+      github.repository_owner == 'neotheicebird' &&
       contains(fromJson('["pull_request", "pull_request_target"]'), github.event.workflow_run.event) &&
       github.event.workflow_run.conclusion != 'skipped'
     outputs:

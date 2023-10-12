@@ -17,7 +17,7 @@ permissions:
 
 jobs:
   remove-disabled-formulae:
-    if: github.repository_owner == 'Homebrew'
+    if: github.repository_owner == 'neotheicebird'
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/homebrew/ubuntu22.04:master

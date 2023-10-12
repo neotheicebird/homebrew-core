@@ -19,7 +19,7 @@ permissions:
 
 jobs:
   upload-metadata:
-    if: always() && github.repository_owner == 'Homebrew'
+    if: always() && github.repository_owner == 'neotheicebird'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/upload-artifact@v3
@@ -28,7 +28,7 @@ jobs:
           path: ${{ github.event_path }}
 
   workflows-label:
-    if: always() && github.repository_owner == 'Homebrew'
+    if: always() && github.repository_owner == 'neotheicebird'
     runs-on: ubuntu-latest
     steps:
       - name: Check pull request changed files

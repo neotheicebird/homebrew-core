@@ -26,7 +26,7 @@ env:
 jobs:
   check:
     if: >
-      github.repository_owner == 'Homebrew' &&
+      github.repository_owner == 'neotheicebird' &&
       (github.event_name != 'workflow_run' || github.event.workflow_run.event == 'pull_request')
     runs-on: ubuntu-latest
     outputs:
@@ -73,7 +73,7 @@ jobs:
   recreate:
     needs: check
     if: >
-      github.repository_owner == 'Homebrew' &&
+      github.repository_owner == 'neotheicebird' &&
       (github.event_name != 'workflow_run' || github.event.workflow_run.event == 'pull_request') &&
       fromJson(needs.check.outputs.recreate)
     runs-on: ubuntu-latest
