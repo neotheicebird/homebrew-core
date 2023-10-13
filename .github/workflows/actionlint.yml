@@ -21,7 +21,7 @@ env:
 
 jobs:
   workflow_syntax:
-    if: github.repository_owner == 'Homebrew'
+    if: github.repository_owner == 'neotheicebird'
     runs-on: ubuntu-22.04
     container:
       image: ghcr.io/homebrew/ubuntu22.04:master

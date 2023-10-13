@@ -12,7 +12,7 @@ on:
 jobs:
   check:
     if: >
-      github.repository_owner == 'Homebrew' &&
+      github.repository_owner == 'neotheicebird' &&
       ((github.event_name == 'pull_request_review' && github.event.review.state == 'approved') ||
        (github.event_name == 'pull_request_target' &&
        (github.event.action == 'ready_for_review' || github.event.label.name == 'automerge-skip')))
